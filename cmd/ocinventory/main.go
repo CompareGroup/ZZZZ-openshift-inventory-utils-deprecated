@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/ronaldkonjer/openshift-inventory-utils/inventory"
-	"github.com/ronaldkonjer/openshift-inventory-utils/node"
+	"github.com/CompareGroup/openshift-inventory-utils/inventory"
+	"github.com/CompareGroup/openshift-inventory-utils/node"
 )
 
 func main() {

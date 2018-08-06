@@ -4,7 +4,7 @@ import (
 	"io/ioutil"
 
 	"github.com/ghodss/yaml"
-	"github.com/ronaldkonjer/openshift-inventory-utils/node"
+	"github.com/CompareGroup/openshift-inventory-utils/node"
 )
 
 // Generate ansible inventory for openshift
