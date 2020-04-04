@@ -2,7 +2,18 @@
 
 
 [[projects]]
-  digest = "1:be42c0f210f37cce78016719b00a4dd2b837d1fef403e5190b7bca95969e621c"
+  digest = "1:364ccf21256a6113a677039f39b6ca32eb58433928a7bbe34ab21f1cf47fe797"
+  name = "github.com/CompareGroup/openshift-inventory-utils"
+  packages = [
+    "inventory",
+    "node",
+  ]
+  pruneopts = ""
+  revision = "b0e1332649654c393f641877cadc86ded6f8e707"
+  version = "v1.0"
+
+[[projects]]
+  digest = "1:471969f1d170322b23495c7d5369c34acb5dca92c2e8d4a44f225693a918e580"
   name = "github.com/aws/aws-sdk-go"
   packages = [
     "aws",
@@ -44,7 +55,7 @@
   version = "v1.0.0"
 
 [[projects]]
-  digest = "1:bbc763f3c703dc3c6a99a22c1318760099b52bc00a47a36dc4462e88eee7846b"
+  digest = "1:a00483fe4106b86fb1187a92b5cf6915c85f294ed4c129ccbe7cb1f1a06abd46"
   name = "github.com/go-ini/ini"
   packages = ["."]
   pruneopts = ""
@@ -52,7 +63,7 @@
   version = "v1.32.0"
 
 [[projects]]
-  digest = "1:4f767a115bc8e08576f6d38ab73c376fc1b1cd3bb5041171c9e8668cc7739b52"
+  digest = "1:6f49eae0c1e5dab1dafafee34b207aeb7a42303105960944828c2079b92fc88e"
   name = "github.com/jmespath/go-jmespath"
   packages = ["."]
   pruneopts = ""
@@ -70,6 +81,8 @@
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
+    "github.com/CompareGroup/openshift-inventory-utils/inventory",
+    "github.com/CompareGroup/openshift-inventory-utils/node",
     "github.com/aws/aws-sdk-go/aws",
     "github.com/aws/aws-sdk-go/aws/session",
     "github.com/aws/aws-sdk-go/service/ec2",
