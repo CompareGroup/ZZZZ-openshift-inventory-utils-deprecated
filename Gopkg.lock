@@ -2,18 +2,7 @@
 
 
 [[projects]]
-  digest = "1:364ccf21256a6113a677039f39b6ca32eb58433928a7bbe34ab21f1cf47fe797"
-  name = "github.com/CompareGroup/openshift-inventory-utils"
-  packages = [
-    "inventory",
-    "node",
-  ]
-  pruneopts = ""
-  revision = "b0e1332649654c393f641877cadc86ded6f8e707"
-  version = "v1.0"
-
-[[projects]]
-  digest = "1:471969f1d170322b23495c7d5369c34acb5dca92c2e8d4a44f225693a918e580"
+  digest = "1:e69bc90687a4ed4fa20ac5ba79163719952bfc833fe5e38fd86435119ae3bfd2"
   name = "github.com/aws/aws-sdk-go"
   packages = [
     "aws",
@@ -26,12 +15,17 @@
     "aws/credentials/ec2rolecreds",
     "aws/credentials/endpointcreds",
     "aws/credentials/stscreds",
+    "aws/csm",
     "aws/defaults",
     "aws/ec2metadata",
     "aws/endpoints",
     "aws/request",
     "aws/session",
     "aws/signer/v4",
+    "internal/ini",
+    "internal/sdkio",
+    "internal/sdkrand",
+    "internal/sdkuri",
     "internal/shareddefaults",
     "private/protocol",
     "private/protocol/ec2query",
@@ -43,24 +37,8 @@
     "service/sts",
   ]
   pruneopts = ""
-  revision = "3c754f1d340244540350f0a00b940781bae9c905"
-  version = "v1.12.59"
-
-[[projects]]
-  digest = "1:b13707423743d41665fd23f0c36b2f37bb49c30e94adb813319c44188a51ba22"
-  name = "github.com/ghodss/yaml"
-  packages = ["."]
-  pruneopts = ""
-  revision = "0ca9ea5df5451ffdf184b4428c902747c2c11cd7"
-  version = "v1.0.0"
-
-[[projects]]
-  digest = "1:a00483fe4106b86fb1187a92b5cf6915c85f294ed4c129ccbe7cb1f1a06abd46"
-  name = "github.com/go-ini/ini"
-  packages = ["."]
-  pruneopts = ""
-  revision = "32e4c1e6bc4e7d0d8451aa6b75200d19e37a536a"
-  version = "v1.32.0"
+  revision = "47607acdb3657d60debbfa33f328dc9801fb3cfd"
+  version = "v1.15.74"
 
 [[projects]]
   digest = "1:6f49eae0c1e5dab1dafafee34b207aeb7a42303105960944828c2079b92fc88e"
@@ -71,22 +49,20 @@
 
 [[projects]]
   branch = "v2"
-  digest = "1:c9d139dd52252b24607cfe3aa91d92f19760d330e22f03953633930623506a05"
+  digest = "1:f0620375dd1f6251d9973b5f2596228cc8042e887cd7f827e4220bc1ce8c30e2"
   name = "gopkg.in/yaml.v2"
   packages = ["."]
   pruneopts = ""
-  revision = "c4a9fb418357aceb801272d73efd518f183700fa"
+  revision = "5420a8b6744d3b0345ab293f6fcba19c978f1183"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
-    "github.com/CompareGroup/openshift-inventory-utils/inventory",
-    "github.com/CompareGroup/openshift-inventory-utils/node",
     "github.com/aws/aws-sdk-go/aws",
     "github.com/aws/aws-sdk-go/aws/session",
     "github.com/aws/aws-sdk-go/service/ec2",
-    "github.com/ghodss/yaml",
+    "gopkg.in/yaml.v2",
   ]
   solver-name = "gps-cdcl"
   solver-version = 1
